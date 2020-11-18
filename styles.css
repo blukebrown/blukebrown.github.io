@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0068a5 0%, #80d0c7d7 100%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+#main-header {
+    width: 100%;
+    margin: 3em auto;
+    text-align: center;
+    color: white;
+}
+
+ul.external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 15em;
+    margin: 0 auto;
+
+}
+
+ul.external-links li a {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+
+#projects-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    width: 90%;
+    max-width: 32em;
+    margin: 1em auto;
+    padding: 1.5em;
+    background-color: #e2e2e2;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.project p {
+    margin-bottom: 1em;
+}
+
+.project p a {
+    text-decoration: underline;
+}
+
+.flair {
+    display: inline-block;
+    background-color: #cecece;
+    margin: .1em;
+    padding: .3em .85em;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.project ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project ul li {
+    background-color: #000000;
+    margin: 1em;
+    border-radius: 3px;
+    border: 2px solid #000000;
+    transition: background-color 400ms ease-in-out;
+}
+
+.project ul li a {
+    display: inline-block;
+    color: #e2e2e2;
+    padding: 1em 1.5em;
+    transition: color 400ms ease-in-out;
+}
+
+.project ul li:hover {
+    background-color: #e2e2e2;
+    
+}
+
+.project ul li a:hover {
+    color: #000000;
+}
+
+footer {
+    width: 100%;
+    padding: 1.25em 0;
+    text-align: center;
+    background-color: #e2e2e2;
+    font-size: 1.25em;
+}
+
