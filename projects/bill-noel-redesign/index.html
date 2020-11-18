@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bill Noel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bill Noel</h1>
+        <nav id="desktop-nav">
+            <a href="#">Home</a>
+            <a href="books.html">Books</a>
+            <a href="#">Author</a>
+        </nav>
+
+        <button onclick="mobileMenuFunction()" id="mobile-menu-btn">&#9776;</button>
+    </header>
+
+    <nav id="mobile-nav">
+        <a href="#">Home</a>
+        <a href="books.html">Books</a>
+        <a href="#">Author</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="card-section">
+               <a href="book-page.html" class="main-book-link">
+                <article class="main-card">
+                    <img class="float-left" src="img/cover_01_folly.jpg" alt="" />
+                    <h2>Latest Folly Beach Mystery!</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </article>
+                </a>
+                <a href="book-page.html" class="main-book-link">
+                <article class="main-card">
+                    <img class="float-right" src="img/cover_01_folly.jpg" alt="" />
+                    <h2>Check out this awesome book</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </article>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; 1997-2020 Bill Noel
+    </footer>
+</body>
+
+<script>
+    let mobileMenu = document.getElementById('mobile-nav');
+
+    function mobileMenuFunction() {
+
+        let menuStyle = mobileMenu.style.display;
+
+        if (menuStyle == 'none' || menuStyle == "") {
+            mobileMenu.style.display = 'flex';
+        } else {
+            mobileMenu.style.display = 'none';
+        }
+
+    }
+
+    window.onresize = function() {
+        if (window.innerWidth >= 640 && mobileMenu.style.display == 'flex') {
+            mobileMenu.style.display = 'none';
+        }
+    }
+</script></html>
+

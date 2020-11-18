@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War -- Singleplayer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div id="opponent" class="card-container">
+                <div class="card"></div>
+            </div>
+            <div class="card-count">
+                Opponent Deck
+                <br>
+                <span id="opponent-deck-num">26</span>
+                Cards
+            </div>
+        </div>
+        <div>
+            <div id="player" class="card-container">
+                <div class="card"></div>
+            </div>
+            <div id="playerDeckNum" class="card-count">
+                Your Deck
+                <br>
+                <span id="player-deck-num">26</span>
+                Cards
+            </div>
+        </div>
+    </div>
+    <div id="game-controls-container">
+        <button id="play-button" type="button">Play a Card</button>
+        <button id="reset-button" type="button">Reset Game</button>
+    </div>
+    <div id="game-console">
+        Play a Card
+    </div>
+</body>
+<script src="war-logic.js"></script>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bill Noel - Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bill Noel</h1>
+        <nav id="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Author</a>
+        </nav>
+
+        <button onclick="mobileMenuFunction()" id="mobile-menu-btn">&#9776;</button>
+    </header>
+
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Author</a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="header-h2">Books</h2>
+                <hr>
+                <label for="pet-select">Sort By</label>
+                <select onchange="val()" name="sort-by" id="sort-select">
+                    <option value="oldest" selected>Oldest to Newest</option>
+                    <option value="newest">Newest to Oldest</option>
+                </select>
+                <ul class="book-grid" id="grid">
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_01_folly.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Folly</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_02_thepier.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">The Pier</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_03_washout.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Washout</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_04_theedge.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">The Edge</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_05_themarsh.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">The Marsh</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_06_ghosts.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Ghosts</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_07_missing.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Missing</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_08_finalcut.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Final Cut</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_09_firstlight.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">First Light</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_10_boneyardbeach.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Boneyard Beach</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_11_silentnight.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Silent Night</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_12_deadcenter.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Dead Center</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_13_discord.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Discord</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_14_darkhorse.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Dark Horse</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_15_joy.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Joy</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_16_nojoke.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">No Joke</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_17_relic.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Relic</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="book-page.html" class="book__card">
+                            <img src="img/cover_18_faith.jpg" alt="" class="book__img" />
+                            <h3 class="book__title">Faith</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        &copy; 1997-2020 Bill Noel
+    </footer>
+</body>
+
+<script>
+    // On change of the <select> element, run this function
+    function val() {
+        // Don't need this line. Originally was going to manipulate DOM 
+        // by the <select> value, but with two options (one is default), 
+        // I can just run the same code each time to reverse it.
+        // let sortOption  = document.getElementById("sort-select").value;
+
+        // Get parent element
+        const bookGrid = document.getElementById('grid');
+        // Create an array of the children
+        const arr = Array.from(bookGrid.childNodes);
+        // Reverse arr (essentially the DOM)
+        arr.reverse();
+        // Append to the parent container
+        bookGrid.append(...arr);
+    }
+    
+    let mobileMenu = document.getElementById('mobile-nav');
+    
+    function mobileMenuFunction() {
+        
+        let menuStyle = mobileMenu.style.display;
+
+        if (menuStyle == 'none' || menuStyle == "") {
+            mobileMenu.style.display = 'flex';
+        } else {
+            mobileMenu.style.display = 'none';
+        }
+
+    }
+    
+    window.onresize = function() {
+        if (window.innerWidth >= 640 && mobileMenu.style.display == 'flex') {
+            mobileMenu.style.display = 'none';
+        }
+    }
+</script></html>

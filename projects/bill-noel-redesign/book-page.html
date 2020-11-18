@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bill Noel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bill Noel</h1>
+        <nav id="desktop-nav">
+            <a href="#">Home</a>
+            <a href="books.html">Books</a>
+            <a href="#">Author</a>
+        </nav>
+
+        <button onclick="mobileMenuFunction()" id="mobile-menu-btn">&#9776;</button>
+    </header>
+
+    <nav id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="#">Author</a>
+    </nav>
+
+    <main>
+       <div class="container">
+        <div class="two-column-grid">
+            <div class="left-col"><img src="img/cover_01_folly.jpg" alt=""></div>
+            <div class="right-col">
+                <h2>Book Title</h2>
+                <a href="#" class="buy-btn">Buy on Amazon</a>
+                
+                <p class="book-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h3>Review and Praise</h3>
+                <p>"Aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria" -Reviews</p>
+                <p>"Aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paria" -Reviews</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 1997-2020 Bill Noel
+    </footer>
+</body>
+
+<script>
+    
+    let mobileMenu = document.getElementById('mobile-nav');
+    
+    function mobileMenuFunction() {
+        
+        let menuStyle = mobileMenu.style.display;
+
+        if (menuStyle == 'none' || menuStyle == "") {
+            mobileMenu.style.display = 'flex';
+        } else {
+            mobileMenu.style.display = 'none';
+        }
+
+    }
+    
+    window.onresize = function() {
+        if (window.innerWidth >= 640 && mobileMenu.style.display == 'flex') {
+            mobileMenu.style.display = 'none';
+        }
+    }
+</script></html>
+
