@@ -8,11 +8,27 @@ body {
     font-family: 'Noto Sans Mono', monospace;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+article.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-article {
+section {
     border: 5px solid #000000;
+    max-width: 500px;
+    margin: 1.5em 2em;
+}
+
+@media (min-width: 1024px) {
+    article.card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        flex: 0 0 30%;
+        margin: 1.5em 1em;
+    }
 }
