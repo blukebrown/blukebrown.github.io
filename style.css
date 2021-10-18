@@ -18,7 +18,7 @@ section {
     border: 5px solid #000000;
     max-width: 500px;
     margin: 1.5em 2em;
-    padding: 1em;
+    padding: 1em 1em;
 }
 
 p.project-description {
@@ -27,7 +27,24 @@ p.project-description {
     margin-bottom: 1em;
 }
 
+p.project-keywords {
+    font-size: 12px;
+}
+
 @media (min-width: 1024px) {
+    article.card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        flex: 0 0 45%;
+        margin: 1.5em 1em;
+    }
+}
+
+@media (min-width: 1300px) {
     article.card-container {
         flex-direction: row;
         flex-wrap: wrap;
