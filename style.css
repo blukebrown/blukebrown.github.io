@@ -61,6 +61,15 @@ p.project-keywords {
     }
 }
 
+.project-link {
+    display: flex;
+    align-items: center;
+}
+
+.link-icon {
+    width: 24px;
+}
+
 /* UTILITY CLASSES */
 .ocusell-green {
     color: #6BCA98;
